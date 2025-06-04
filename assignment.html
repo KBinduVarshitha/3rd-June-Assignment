@@ -1,0 +1,55 @@
+<!-- 3rd June -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+</head>
+<body>
+    <script>
+        // Functions
+        function square(x)
+        {
+            document.writeln("The square of "+x+" is : "+x*x);
+        }
+        square(5);
+
+        // Arrow function 
+        const sum=(a,b)=>
+        {
+            document.writeln("<br>This is added through Arrow function.<br>");
+            return a+b;
+        }   
+        document.writeln("10 + 20 = "+sum(10,20));
+
+        // Callback Function/
+        function welcome(text)
+        {
+            anotherfunc();
+            document.writeln("<br>Welcome to Web Development Course "+text+"!!");
+        }
+        function anotherfunc()
+        {
+            document.writeln("<br>This is welcome from anotherfunction!!");
+        }
+        welcome("Bindu");
+
+        // Higher Order Function 
+        function mul(a,b,multiply)
+        {
+            return multiply(a,b);
+        }
+        const multiply=(x,y)=>x*y;
+        document.writeln("<br>4 * 6 = "+mul(4,6,multiply));
+
+        // Anonymous Function 
+        const word=function(name)
+        {
+            document.writeln(" <br>Hey, this is "+name+" from anonymous function");
+        }
+        word("Bindu");
+    </script>
+</body>
+</html>
